@@ -747,7 +747,7 @@ button {
 .card-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(17, 17, 17, 0.52);
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.6) 0%, rgba(17, 17, 17, 0.4) 25%, transparent 45%);
     display: flex;
     align-items: flex-end;
     padding: 36px;
@@ -864,9 +864,10 @@ button {
         min-height: 360px;
     }
 
-    /* Always show overlay on touch devices */
+    /* Subtle bottom gradient on touch devices */
     .card-overlay {
         opacity: 1;
+        background: linear-gradient(to top, rgba(17, 17, 17, 0.55) 0%, rgba(17, 17, 17, 0.3) 20%, transparent 40%);
     }
 
     .card-content {

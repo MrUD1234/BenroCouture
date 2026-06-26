@@ -4225,7 +4225,7 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-hero-overlay {
-        background: rgba(17, 17, 17, 0.45);
+        background: rgba(17, 17, 17, 0.6);
     }
 
     .ac-hero-content {
@@ -4326,7 +4326,7 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-hero {
-        height: 75vh;
+        height: 85vh;
         min-height: 460px;
     }
 

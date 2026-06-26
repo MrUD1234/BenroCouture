@@ -858,12 +858,28 @@ button {
         margin-bottom: 48px;
     }
 
-    .creation-card--large {
-        min-height: 440px;
+    .featured-grid {
+        grid-template-columns: 1fr;
     }
 
     .featured-column {
-        grid-template-columns: 1fr;
+        display: contents;
+    }
+
+    #creation-03 {
+        order: -1;
+    }
+
+    #creation-01 {
+        order: 0;
+    }
+
+    #creation-02 {
+        order: 1;
+    }
+
+    .creation-card--large {
+        min-height: 440px;
     }
 
     .creation-card--tall {

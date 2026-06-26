@@ -3582,18 +3582,18 @@ button {
 /* --- Hero --- */
 .ac-hero {
     position: relative;
-    height: 75vh;
+    height: 95vh;
     min-height: 600px;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 .ac-hero-image-wrapper {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 55%;
+    inset: 0;
+    width: 100%;
     height: 100%;
 }
 
@@ -3601,23 +3601,23 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center 30%;
     display: block;
 }
 
 .ac-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(17, 17, 17, 0.15) 0%, rgba(17, 17, 17, 0.08) 50%, rgba(17, 17, 17, 0.12) 100%);
+    background: rgba(17, 17, 17, 0.35);
     z-index: 1;
 }
 
 .ac-hero-content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
-    padding: 0 4%;
-    margin-left: 6%;
+    text-align: center;
+    max-width: 780px;
+    padding: 0 24px;
 }
 
 .ac-hero-eyebrow {
@@ -4188,10 +4188,6 @@ details[open] .ac-faq-question::after {
         --ac-spacing-section: 110px;
     }
 
-    .ac-hero-content {
-        margin-left: 4%;
-    }
-
     .ac-skills-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
@@ -4212,13 +4208,8 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-hero {
-        height: 70vh;
+        height: 85vh;
         min-height: 500px;
-    }
-
-    .ac-hero-image-wrapper {
-        width: 100%;
-        right: auto;
     }
 
     .ac-hero-image {
@@ -4226,23 +4217,11 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-hero-overlay {
-        background: rgba(17, 17, 17, 0.4);
+        background: rgba(17, 17, 17, 0.45);
     }
 
     .ac-hero-content {
-        margin-left: 0;
         padding: 0 24px;
-        text-align: center;
-        max-width: 100%;
-    }
-
-    .ac-hero-copy {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .ac-hero-actions {
-        justify-content: center;
     }
 
     .ac-philosophy-container,
@@ -4339,7 +4318,7 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-hero {
-        height: 65vh;
+        height: 75vh;
         min-height: 460px;
     }
 
@@ -4350,6 +4329,17 @@ details[open] .ac-faq-question::after {
     .ac-hero-copy {
         font-size: 14px;
         margin-bottom: 24px;
+    }
+
+    .ac-hero-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ac-hero-actions .btn {
+        width: 100%;
+        text-align: center;
     }
 
     .ac-section-heading {

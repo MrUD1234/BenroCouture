@@ -3601,14 +3601,14 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 15%;
     display: block;
 }
 
 .ac-hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(17, 17, 17, 0.35);
+    background: rgba(17, 17, 17, 0.55);
     z-index: 1;
 }
 
@@ -3647,12 +3647,13 @@ button {
     font-weight: 300;
     color: rgba(248, 246, 242, 0.8);
     line-height: 1.7;
-    max-width: 480px;
-    margin-bottom: 32px;
+    max-width: 520px;
+    margin: 0 auto 32px;
 }
 
 .ac-hero-actions {
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
 }

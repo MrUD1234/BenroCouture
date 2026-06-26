@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', highlightActiveNav);
 
     // ==========================================
-    // Hero Video — smooth playback speed
+    // Hero Video — smooth looping playback
     // ==========================================
     const heroVideo = document.querySelector('.hero-video');
 
@@ -80,7 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
         heroVideo.addEventListener('loadedmetadata', () => {
             heroVideo.playbackRate = 0.7;
         });
-        heroVideo.play().catch(() => {});
+        heroVideo.addEventListener('canplay', () => {
+            heroVideo.play();
+        }, { once: true });
+        heroVideo.preload = 'auto';
+        heroVideo.load();
     }
 
     // ==========================================
@@ -218,27 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================
-    // Lazy-load videos when scrolled near
+    // Academy Video — Lazy Load & Autoplay
     // ==========================================
-    function lazyLoadVideo(selector) {
-        const video = document.querySelector(selector);
-        if (!video) return;
-        const observer = new IntersectionObserver((entries) => {
+    const academyVideo = document.querySelector('.academy-video');
+
+    if (academyVideo) {
+        const videoObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    video.preload = 'auto';
-                    video.load();
-                    observer.unobserve(entry.target);
+                    academyVideo.preload = 'auto';
+                    academyVideo.load();
+                    academyVideo.play().catch(() => {});
+                    videoObserver.unobserve(entry.target);
                 }
-            });
-        }, { rootMargin: '200px' });
-        observer.observe(video);
-    }
-
-    lazyLoadVideo('.academy-video');
-    lazyLoadVideo('.clients-video');
-    lazyLoadVideo('.final-cta-video');
-    lazyLoadVideo('.lb-video');
             });
         }, { rootMargin: '200px' });
 

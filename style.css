@@ -3542,3 +3542,836 @@ button {
         font-size: 28px;
     }
 }
+
+/* ==========================================
+    20. Academy Page
+   ========================================== */
+
+.academy-page {
+    --ac-gold: var(--color-accent, #B8963E);
+    --ac-ivory: var(--color-surface, #F8F6F2);
+    --ac-white: #FFFFFF;
+    --ac-dark: var(--color-primary, #111111);
+    --ac-spacing-section: 140px;
+    --ac-transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    background: var(--ac-white);
+    scroll-behavior: smooth;
+}
+
+/* --- Shared section patterns --- */
+.ac-eyebrow {
+    display: block;
+    font-family: var(--font-body);
+    font-size: clamp(11px, 1vw, 13px);
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ac-gold);
+    margin-bottom: 16px;
+}
+
+.ac-section-heading {
+    font-family: var(--font-headings);
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 300;
+    line-height: 1.12;
+    color: var(--ac-dark);
+    letter-spacing: -0.3px;
+}
+
+/* --- Hero --- */
+.ac-hero {
+    position: relative;
+    height: 75vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ac-hero-image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+}
+
+.ac-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.ac-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.15) 0%, rgba(17, 17, 17, 0.08) 50%, rgba(17, 17, 17, 0.12) 100%);
+    z-index: 1;
+}
+
+.ac-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 0 4%;
+    margin-left: 6%;
+}
+
+.ac-hero-eyebrow {
+    display: block;
+    font-family: var(--font-body);
+    font-size: clamp(11px, 1.2vw, 14px);
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--ac-gold);
+    margin-bottom: 24px;
+}
+
+.ac-hero-heading {
+    font-family: var(--font-headings);
+    font-size: clamp(36px, 5.5vw, 68px);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--ac-white);
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+
+.ac-hero-copy {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1.2vw, 17px);
+    font-weight: 300;
+    color: rgba(248, 246, 242, 0.8);
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 32px;
+}
+
+.ac-hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* --- Philosophy Section --- */
+.ac-philosophy {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-ivory);
+}
+
+.ac-philosophy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-philosophy-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.ac-philosophy-body {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.ac-philosophy-text {
+    font-family: var(--font-body);
+    font-size: clamp(15px, 1.1vw, 17px);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(17, 17, 17, 0.65);
+    margin-bottom: 24px;
+}
+
+.ac-philosophy-text:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Skills Section --- */
+.ac-skills {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-white);
+}
+
+.ac-skills-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-skills-header {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.ac-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ac-skill-card {
+    background: var(--ac-ivory);
+    overflow: hidden;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ac-skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(17, 17, 17, 0.06);
+}
+
+.ac-skill-image-wrapper {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.ac-skill-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ac-skill-card:hover .ac-skill-image {
+    transform: scale(1.04);
+}
+
+.ac-skill-content {
+    padding: 24px 20px 28px;
+}
+
+.ac-skill-title {
+    font-family: var(--font-headings);
+    font-size: clamp(17px, 1.3vw, 22px);
+    font-weight: 400;
+    color: var(--ac-dark);
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.ac-skill-desc {
+    font-family: var(--font-body);
+    font-size: clamp(13px, 0.9vw, 15px);
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(17, 17, 17, 0.55);
+}
+
+/* --- Video Section --- */
+.ac-video {
+    padding: 0 0 var(--ac-spacing-section);
+    background: var(--ac-white);
+}
+
+.ac-video-wrapper {
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 700px;
+    background: #111;
+    overflow: hidden;
+}
+
+.ac-video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ac-video-summary {
+    max-width: 680px;
+    margin: 56px auto 0;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.ac-video-text {
+    font-family: var(--font-body);
+    font-size: clamp(15px, 1.1vw, 17px);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(17, 17, 17, 0.65);
+}
+
+/* --- Journey Section --- */
+.ac-journey {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-ivory);
+}
+
+.ac-journey-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-journey-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.ac-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ac-timeline-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.ac-timeline-number {
+    font-family: var(--font-headings);
+    font-size: clamp(32px, 3.5vw, 48px);
+    font-weight: 300;
+    color: var(--ac-gold);
+    line-height: 1;
+    min-width: 48px;
+}
+
+.ac-timeline-content {
+    padding-top: 4px;
+}
+
+.ac-timeline-title {
+    font-family: var(--font-headings);
+    font-size: clamp(18px, 1.6vw, 22px);
+    font-weight: 400;
+    color: var(--ac-dark);
+    margin-bottom: 6px;
+}
+
+.ac-timeline-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(17, 17, 17, 0.5);
+    line-height: 1.6;
+}
+
+.ac-timeline-line {
+    width: 1px;
+    height: 40px;
+    background: rgba(185, 150, 62, 0.2);
+    margin: 8px 0 8px 24px;
+}
+
+/* --- Mentor Section --- */
+.ac-mentor {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-white);
+}
+
+.ac-mentor-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.ac-mentor-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ac-mentor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ac-mentor-content {
+    max-width: 480px;
+}
+
+.ac-mentor-role {
+    font-family: var(--font-body);
+    font-size: clamp(13px, 0.9vw, 15px);
+    font-weight: 400;
+    color: rgba(17, 17, 17, 0.45);
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+}
+
+.ac-mentor-text p {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1vw, 16px);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(17, 17, 17, 0.65);
+    margin-bottom: 20px;
+}
+
+.ac-mentor-text p:last-child {
+    margin-bottom: 0;
+    font-family: var(--font-headings);
+    font-size: clamp(17px, 1.3vw, 20px);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ac-dark);
+    line-height: 1.5;
+    padding-top: 24px;
+    border-top: 1px solid rgba(17, 17, 17, 0.08);
+}
+
+/* --- Outcomes Section --- */
+.ac-outcomes {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-dark);
+}
+
+.ac-outcomes-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-outcomes-header {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.ac-outcomes-header .ac-eyebrow {
+    color: var(--ac-gold);
+}
+
+.ac-outcomes-header .ac-section-heading {
+    color: var(--ac-white);
+}
+
+.ac-outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.ac-outcome-card {
+    padding-top: 32px;
+    border-top: 1px solid rgba(184, 150, 62, 0.2);
+}
+
+.ac-outcome-number {
+    display: block;
+    font-family: var(--font-headings);
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--ac-gold);
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.ac-outcome-title {
+    font-family: var(--font-headings);
+    font-size: clamp(17px, 1.3vw, 22px);
+    font-weight: 400;
+    color: var(--ac-white);
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.ac-outcome-text {
+    font-family: var(--font-body);
+    font-size: clamp(13px, 0.9vw, 15px);
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(248, 246, 242, 0.55);
+}
+
+/* --- Enrolment Section --- */
+.ac-enrolment {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-ivory);
+}
+
+.ac-enrolment-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-enrolment-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.ac-enrolment-details {
+    margin-bottom: 56px;
+}
+
+.ac-enrolment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
+}
+
+.ac-enrolment-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ac-gold);
+}
+
+.ac-enrolment-value {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1vw, 16px);
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(17, 17, 17, 0.65);
+}
+
+.ac-enrolment-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(17, 17, 17, 0.06);
+}
+
+.ac-enrolment-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* --- FAQ Section --- */
+.ac-faq {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-white);
+}
+
+.ac-faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-faq-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.ac-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.ac-faq-item {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.06);
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.ac-faq-question {
+    font-family: var(--font-headings);
+    font-size: clamp(16px, 1.3vw, 20px);
+    font-weight: 400;
+    color: var(--ac-dark);
+    line-height: 1.4;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+.ac-faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.ac-faq-question::after {
+    content: '+';
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--ac-gold);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+details[open] .ac-faq-question::after {
+    content: '−';
+}
+
+.ac-faq-answer {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1vw, 16px);
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(17, 17, 17, 0.55);
+    padding: 16px 0 8px;
+    max-width: 580px;
+}
+
+/* --- Final CTA --- */
+.ac-final-cta {
+    padding: var(--ac-spacing-section) 0;
+    background: var(--ac-ivory);
+    text-align: center;
+}
+
+.ac-final-cta-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.ac-final-cta-heading {
+    font-family: var(--font-headings);
+    font-size: clamp(34px, 4.5vw, 58px);
+    font-weight: 300;
+    line-height: 1.15;
+    color: var(--ac-dark);
+    margin-bottom: 20px;
+}
+
+.ac-final-cta-copy {
+    font-family: var(--font-body);
+    font-size: clamp(14px, 1.1vw, 16px);
+    font-weight: 300;
+    color: rgba(17, 17, 17, 0.6);
+    line-height: 1.7;
+    max-width: 520px;
+    margin: 0 auto 40px;
+}
+
+.ac-final-cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* --- Data-reveal initial states --- */
+.academy-page [data-reveal] {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+/* --- Academy Hero Animation helpers --- */
+.academy-page .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.academy-page .delay-1 { animation-delay: 0.2s; }
+.academy-page .delay-2 { animation-delay: 0.4s; }
+.academy-page .delay-3 { animation-delay: 0.6s; }
+
+/* ==========================================
+    20b. Academy Page — Responsive
+   ========================================== */
+@media (max-width: 1024px) {
+    .academy-page {
+        --ac-spacing-section: 110px;
+    }
+
+    .ac-hero-content {
+        margin-left: 4%;
+    }
+
+    .ac-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .ac-outcomes-grid {
+        gap: 32px;
+    }
+
+    .ac-mentor-container {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .academy-page {
+        --ac-spacing-section: 80px;
+    }
+
+    .ac-hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .ac-hero-image-wrapper {
+        width: 100%;
+        right: auto;
+    }
+
+    .ac-hero-image {
+        object-position: 70% 20%;
+    }
+
+    .ac-hero-overlay {
+        background: rgba(17, 17, 17, 0.4);
+    }
+
+    .ac-hero-content {
+        margin-left: 0;
+        padding: 0 24px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .ac-hero-copy {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ac-hero-actions {
+        justify-content: center;
+    }
+
+    .ac-philosophy-container,
+    .ac-skills-container,
+    .ac-video-summary,
+    .ac-journey-container,
+    .ac-mentor-container,
+    .ac-enrolment-container,
+    .ac-faq-container,
+    .ac-final-cta-container,
+    .ac-outcomes-container {
+        padding: 0 20px;
+    }
+
+    .ac-skills-header {
+        margin-bottom: 48px;
+    }
+
+    .ac-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .ac-skills-grid {
+        gap: 16px;
+    }
+
+    .ac-skill-content {
+        padding: 20px 16px 24px;
+    }
+
+    .ac-video-wrapper {
+        height: 60vh;
+        min-height: 360px;
+    }
+
+    .ac-video-summary {
+        margin-top: 40px;
+    }
+
+    .ac-journey-header {
+        margin-bottom: 56px;
+    }
+
+    .ac-timeline-step {
+        gap: 16px;
+        grid-template-columns: 40px 1fr;
+    }
+
+    .ac-timeline-number {
+        font-size: 32px;
+        min-width: 40px;
+    }
+
+    .ac-timeline-line {
+        margin-left: 20px;
+    }
+
+    .ac-mentor-container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .ac-mentor-content {
+        max-width: 100%;
+    }
+
+    .ac-mentor-image-wrapper {
+        max-height: 500px;
+        order: -1;
+    }
+
+    .ac-outcomes-header {
+        margin-bottom: 48px;
+    }
+
+    .ac-outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 24px;
+    }
+
+    .ac-enrolment-header {
+        margin-bottom: 48px;
+    }
+
+    .ac-faq-header {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .academy-page {
+        --ac-spacing-section: 64px;
+    }
+
+    .ac-hero {
+        height: 65vh;
+        min-height: 460px;
+    }
+
+    .ac-hero-heading {
+        font-size: 30px;
+    }
+
+    .ac-hero-copy {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .ac-section-heading {
+        font-size: 26px;
+    }
+
+    .ac-skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ac-video-wrapper {
+        height: 50vh;
+        min-height: 280px;
+    }
+
+    .ac-outcomes-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .ac-final-cta-heading {
+        font-size: 28px;
+    }
+}

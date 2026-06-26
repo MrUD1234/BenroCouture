@@ -886,6 +886,15 @@ button {
         min-height: 360px;
     }
 
+    /* Show mobile-ordered numbers */
+    .card-index {
+        font-size: 0;
+    }
+    .card-index::before {
+        font-size: 0.68rem;
+        content: attr(data-mobile-number);
+    }
+
     /* Subtle bottom gradient on touch devices */
     .card-overlay {
         opacity: 1;
@@ -903,6 +912,7 @@ button {
     .btn-outline {
         width: 100%;
         text-align: center;
+        font-weight: 400;
     }
 }
 

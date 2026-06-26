@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenroCouture | Premium Editorial Fashion & Academy</title>
+    <meta name="description" content="Custom-made female fashion pieces, couture garments, bespoke tailoring, and professional fashion training in Imo State. Crafted for women who value elegance and style.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" id="brand-logo">
+                BenroCouture
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-links" id="desktop-nav">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="lookbook.html" class="nav-item">Lookbook</a>
+                <a href="#academy" class="nav-item">Academy</a>
+                <a href="consultation.html" class="nav-item">Book Consultation</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-item">Home</a>
+            <a href="lookbook.html" class="mobile-nav-item">Lookbook</a>
+            <a href="#academy" class="mobile-nav-item">Academy</a>
+            <a href="consultation.html" class="mobile-nav-item">Book Consultation</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Background Video -->
+        <div class="hero-video-wrapper">
+            <video class="hero-video" loop muted playsinline aria-hidden="true">
+                <source src="assest/202606231927 (4).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Dark legibility overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content Container -->
+        <div class="hero-content-container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in-up">
+                    Fashion That Reflects <br>
+                    Confidence, Elegance <br>
+                    &amp; Excellence
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-1">
+                    Custom-made fashion pieces and professional fashion training crafted for women who value quality, style, and attention to detail.
+                </p>
+                <div class="hero-actions fade-in-up delay-2">
+                    <a href="consultation.html" class="btn btn-primary" id="cta-book">Book Consultation</a>
+                    <a href="lookbook.html" class="btn btn-secondary" id="cta-explore">Explore Lookbook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Creations Section -->
+    <section class="featured-section" id="gallery">
+        <div class="featured-container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-label">The Collection</span>
+                <h2 class="section-title">Featured Creations</h2>
+                <p class="section-subtitle">Each piece is a statement. Crafted with intention, worn with confidence.</p>
+            </div>
+
+            <!-- Editorial Grid -->
+            <div class="featured-grid">
+
+                <!-- Card 01 — Large Feature (Left) -->
+                <article class="creation-card creation-card--large" id="creation-01">
+                    <div class="card-image-wrapper">
+                        <img
+                            src="assest/creation-01.png"
+                            alt="BenroCouture — All-black ruched gown with pearl necklace and flared cuffs"
+                            class="card-image"
+                            loading="lazy"
+                        >
+                        <div class="card-overlay">
+                            <div class="card-content">
+                                <span class="card-index">01</span>
+                                <h3 class="card-title">Noir Élégance</h3>
+                                <p class="card-desc">Couture black gown — timeless, sculpted, powerful</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Right Column: Two Stacked Cards -->
+                <div class="featured-column">
+
+                    <!-- Card 02 -->
+                    <article class="creation-card creation-card--tall" id="creation-02">
+                        <div class="card-image-wrapper">
+                            <img
+                                src="assest/creation-02.png"
+                                alt="BenroCouture — Multicolor abstract print gown with black long-sleeve bodice"
+                                class="card-image"
+                                loading="lazy"
+                            >
+                            <div class="card-overlay">
+                                <div class="card-content">
+                                    <span class="card-index">02</span>
+                                    <h3 class="card-title">The Abstract Drape</h3>
+                                    <p class="card-desc">Custom couture — bold fabric meets refined silhouette</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 03 -->
+                    <article class="creation-card creation-card--tall" id="creation-03">
+                        <div class="card-image-wrapper">
+                            <img
+                                src="assest/creation-03.png"
+                                alt="BenroCouture — Emerald green ruched gown with bell cuffs"
+                                class="card-image"
+                                loading="lazy"
+                            >
+                            <div class="card-overlay">
+                                <div class="card-content">
+                                    <span class="card-index">03</span>
+                                    <h3 class="card-title">Emerald Reverie</h3>
+                                    <p class="card-desc">Rich jewel tones — a statement in every fold</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /.featured-column -->
+
+            </div><!-- /.featured-grid -->
+
+            <!-- Section CTA -->
+            <div class="featured-cta">
+                <a href="lookbook.html" class="btn btn-primary" id="cta-gallery">View Lookbook</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About BenroCouture Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+
+            <!-- Left: Image -->
+            <div class="about-image-wrapper">
+                <img
+                    src="assest/founder.png"
+                    alt="Mrs Ene — BenroCouture Showroom"
+                    class="about-image"
+                >
+            </div>
+
+            <!-- Right: Content -->
+            <div class="about-content">
+                <span class="about-eyebrow">Our Story</span>
+                <h2 class="about-heading">Crafting Fashion With Passion And Precision</h2>
+                <div class="about-text">
+                    <p>Every piece that bears the BenroCouture name begins with a vision — how a woman wants to feel when she steps into a room. From the first sketch to the final stitch, our commitment is to bring that vision to life with uncompromising craftsmanship and an unwavering eye for detail.</p>
+                    <p>We believe true luxury lives in the subtleties. The precision of a seam. The way fabric moves with the body. The quiet confidence a woman wears when she knows she looks extraordinary. This is the essence of BenroCouture.</p>
+                    <p>In our showroom, every client is welcomed into a space where fashion is deeply personal. We take time to understand your style, your occasion, and the story you want your clothing to tell. The result is not simply a garment — it is a reflection of you.</p>
+                </div>
+                <blockquote class="about-quote">
+                    “True craftsmanship is invisible.<br>What remains is confidence.”
+                </blockquote>
+                <div class="about-cta">
+                    <a href="consultation.html" class="btn btn-outline">Book Consultation</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose BenroCouture Section -->
+    <section class="why-section" id="why">
+        <div class="why-container">
+
+            <span class="why-eyebrow">Why BenroCouture</span>
+            <h2 class="why-heading">Designed Around Excellence.<br>Crafted Around You.</h2>
+            <p class="why-subtitle">Every BenroCouture creation is guided by craftsmanship, precision, and a commitment to making every woman feel exceptional.</p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <span class="why-number">01</span>
+                    <h3 class="why-card-title">Premium Craftsmanship</h3>
+                    <p class="why-card-text">Every seam, stitch, and silhouette is executed with the precision of a maison that treats fabric as an art form.</p>
+                </div>
+                <div class="why-card">
+                    <span class="why-number">02</span>
+                    <h3 class="why-card-title">Personalized Experience</h3>
+                    <p class="why-card-text">Your story, your occasion, your silhouette — we design around you, not from a template.</p>
+                </div>
+                <div class="why-card">
+                    <span class="why-number">03</span>
+                    <h3 class="why-card-title">Attention To Detail</h3>
+                    <p class="why-card-text">From the first sketch to the final press, no detail is too small and no finish is left unattended.</p>
+                </div>
+                <div class="why-card">
+                    <span class="why-number">04</span>
+                    <h3 class="why-card-title">Fashion Excellence</h3>
+                    <p class="why-card-text">We measure excellence not by trends followed, but by the confidence a woman feels when she wears our work.</p>
+                </div>
+            </div>
+
+            <a href="consultation.html" class="btn btn-why">Book Your Consultation</a>
+
+        </div>
+    </section>
+
+    <!-- Fashion Academy Section -->
+    <section class="academy-section" id="academy">
+        <div class="academy-container">
+
+            <!-- Eyebrow -->
+            <span class="academy-eyebrow" data-reveal>Fashion Academy</span>
+
+            <!-- Main Headline -->
+            <h2 class="academy-heading" data-reveal>Learn The Art.<br>Master The Craft.</h2>
+
+            <!-- Supporting Copy -->
+            <p class="academy-copy" data-reveal>
+                Learn by doing, guided by those who craft.<br>
+                Where creativity meets precision and passion becomes mastery.
+            </p>
+
+            <!-- Large Video -->
+            <div class="academy-video-wrapper" data-reveal>
+                <video class="academy-video" muted playsinline preload="none" loop>
+                    <source src="assest/Academy video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Academy Highlights -->
+            <div class="academy-highlights">
+
+                <div class="academy-highlight" data-reveal>
+                    <span class="highlight-number">01</span>
+                    <h3 class="highlight-title">Practical Hands-On Training</h3>
+                    <p class="highlight-text">Learn through real projects, guided demonstrations, and practical fashion creation.</p>
+                </div>
+
+                <div class="academy-highlight" data-reveal>
+                    <span class="highlight-number">02</span>
+                    <h3 class="highlight-title">Industry Techniques</h3>
+                    <p class="highlight-text">Master professional techniques used to produce elegant and refined garments.</p>
+                </div>
+
+                <div class="academy-highlight" data-reveal>
+                    <span class="highlight-number">03</span>
+                    <h3 class="highlight-title">Creative Learning Environment</h3>
+                    <p class="highlight-text">Develop your skills in an inspiring studio designed to encourage creativity and growth.</p>
+                </div>
+
+                <div class="academy-highlight" data-reveal>
+                    <span class="highlight-number">04</span>
+                    <h3 class="highlight-title">Experienced Guidance</h3>
+                    <p class="highlight-text">Receive mentorship from professionals committed to helping you build confidence and excellence.</p>
+                </div>
+
+            </div>
+
+            <!-- Editorial Feature Strip -->
+            <div class="academy-feature-strip" data-reveal>
+                <span class="feature-word">Creative.</span>
+                <span class="feature-word">Practical.</span>
+                <span class="feature-word">Transformative.</span>
+            </div>
+
+            <!-- CTA -->
+            <div class="academy-actions" data-reveal>
+                <a href="#contact" class="btn btn-primary">Join The Academy</a>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Styled By Real Women Section -->
+    <section class="clients-section" id="clients">
+        <div class="clients-container">
+
+            <!-- Eyebrow -->
+            <span class="clients-eyebrow" data-reveal>Real Stories</span>
+
+            <!-- Main Heading -->
+            <h2 class="clients-heading" data-reveal>Styled By<br>Real Women.</h2>
+
+            <!-- Supporting Copy -->
+            <p class="clients-copy" data-reveal>
+                Every BenroCouture creation comes to life through<br>
+                the women who wear it with confidence,<br>
+                elegance and individuality.
+            </p>
+
+            <!-- Hero Client Image -->
+            <div class="clients-hero" data-reveal>
+                <div class="client-image-wrapper client-image-wrapper--hero">
+                    <img src="assest/WhatsApp Image 2026-06-25 at 02.16.44 (1).jpeg" alt="BenroCouture client — Reception Look" class="client-image" loading="lazy">
+                    <div class="client-overlay">
+                        <span class="client-label">Reception Look</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Supporting Images -->
+            <div class="clients-row clients-row--two" data-reveal>
+                <div class="client-image-wrapper">
+                    <img src="assest/WhatsApp Image 2026-06-25 at 02.16.43.jpeg" alt="BenroCouture client — Evening Elegance" class="client-image" loading="lazy">
+                    <div class="client-overlay">
+                        <span class="client-label">Evening Elegance</span>
+                    </div>
+                </div>
+                <div class="client-image-wrapper">
+                    <img src="assest/WhatsApp Image 2026-06-25 at 02.16.44.jpeg" alt="BenroCouture client — Birthday Celebration" class="client-image" loading="lazy">
+                    <div class="client-overlay">
+                        <span class="client-label">Birthday Celebration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Video -->
+            <div class="clients-video-wrapper" data-reveal>
+                <video class="clients-video" muted playsinline preload="none" loop>
+                    <source src="assest/WhatsApp Video 2026-06-25 at 02.16.46.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Two Supporting Images -->
+            <div class="clients-row clients-row--two clients-row--last" data-reveal>
+                <div class="client-image-wrapper">
+                    <img src="assest/WhatsApp Image 2026-06-25 at 02.17.58.jpeg" alt="BenroCouture client — Special Occasion" class="client-image" loading="lazy">
+                    <div class="client-overlay">
+                        <span class="client-label">Special Occasion</span>
+                    </div>
+                </div>
+                <div class="client-image-wrapper">
+                    <img src="assest/WhatsApp Image 2026-06-25 at 02.17.58 (1).jpeg" alt="BenroCouture client — Celebration Style" class="client-image" loading="lazy">
+                    <div class="client-overlay">
+                        <span class="client-label">Celebration Style</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="clients-cta" data-reveal>
+                <a href="lookbook.html" class="btn btn-outline">Explore Lookbook</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Call To Action Section -->
+    <section class="final-cta-section" id="contact">
+        <div class="final-cta-video-wrapper">
+            <video class="final-cta-video" muted playsinline preload="none" loop>
+                <source src="assest/Final CTA.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="final-cta-overlay"></div>
+
+        <div class="final-cta-content">
+            <span class="final-cta-eyebrow" data-reveal>BenroCouture</span>
+            <h2 class="final-cta-heading" data-reveal>Your Next Signature Look<br>Starts Here.</h2>
+            <p class="final-cta-copy" data-reveal>
+                From bespoke creations to your fashion journey — we bring your vision to life.
+            </p>
+            <div class="final-cta-actions" data-reveal>
+                <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
+                <a href="https://wa.me/2347044688075" class="btn btn-secondary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </div>
+
+            <div class="final-cta-contact" data-reveal>
+                <a href="tel:08068524862" class="final-contact-item">08068524862</a>
+                <span class="final-contact-separator">·</span>
+                <span class="final-contact-item">info@benrocouture.com</span>
+                <span class="final-contact-separator">·</span>
+                <span class="final-contact-item">No. 34 Alaenyi Street, Owerri</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-bg-text" aria-hidden="true">
+            <span>BENRO</span>
+            <span>COUTURE</span>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-logo" data-reveal>
+                <span class="footer-logo-text">BenroCouture</span>
+            </div>
+
+            <hr class="footer-divider" data-reveal>
+
+            <nav class="footer-nav" data-reveal>
+                <a href="#home" class="footer-nav-link">Home</a>
+                <a href="lookbook.html" class="footer-nav-link">Lookbook</a>
+                <a href="#academy" class="footer-nav-link">Academy</a>
+                <a href="consultation.html" class="footer-nav-link">Book Consultation</a>
+            </nav>
+
+            <div class="footer-social" data-reveal>
+                <a href="https://instagram.com/BENROCOUTURE" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://facebook.com/BENROCOUTURE" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="footer-social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                    </svg>
+                </a>
+                <a href="https://wa.me/2347044688075" class="footer-social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-contact" data-reveal>
+                <span class="footer-contact-item">No. 34 Alaenyi Street, Owerri</span>
+                <a href="tel:08068524862" class="footer-contact-item">08068524862</a>
+                <span class="footer-contact-item">info@benrocouture.com</span>
+            </div>
+
+            <p class="footer-signature" data-reveal>
+                Crafted with elegance. Made for women who love timeless fashion.
+            </p>
+
+            <div class="footer-copyright" data-reveal>
+                <p>&copy; 2026 BenroCouture</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -3718,24 +3718,27 @@ button {
 
 .ac-skill-card {
     background: var(--ac-ivory);
+    border: 1px solid rgba(17, 17, 17, 0.04);
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ac-skill-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(17, 17, 17, 0.06);
+    box-shadow: 0 16px 48px rgba(17, 17, 17, 0.08);
 }
 
 .ac-skill-icon-wrapper {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 5 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--ac-ivory);
     color: var(--ac-gold);
     transition: background 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.04);
 }
 
 .ac-skill-card:hover .ac-skill-icon-wrapper {
@@ -3744,8 +3747,8 @@ button {
 }
 
 .ac-skill-icon {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -3754,23 +3757,23 @@ button {
 }
 
 .ac-skill-content {
-    padding: 24px 20px 28px;
+    padding: 20px 20px 24px;
 }
 
 .ac-skill-title {
     font-family: var(--font-headings);
-    font-size: clamp(17px, 1.3vw, 22px);
+    font-size: clamp(16px, 1.2vw, 20px);
     font-weight: 400;
     color: var(--ac-dark);
     line-height: 1.25;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .ac-skill-desc {
     font-family: var(--font-body);
-    font-size: clamp(13px, 0.9vw, 15px);
+    font-size: clamp(13px, 0.85vw, 14px);
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.55;
     color: rgba(17, 17, 17, 0.55);
 }
 
@@ -4258,7 +4261,7 @@ details[open] .ac-faq-question::after {
     }
 
     .ac-skill-content {
-        padding: 20px 16px 24px;
+        padding: 16px 14px 20px;
     }
 
     .ac-video-wrapper {

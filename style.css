@@ -248,20 +248,7 @@ button {
     object-position: center 30%;
 }
 
-@media (max-width: 768px) {
-    .hero-video {
-        display: none;
-    }
-    .hero-video-wrapper {
-        background: #111 url('assest/ChatGPT Image Jun 25, 2026, 11_59_36 AM.png') center/cover no-repeat;
-    }
-    .final-cta-video {
-        display: none;
-    }
-    .final-cta-video-wrapper {
-        background: #111 url('assest/ChatGPT Image Jun 25, 2026, 04_48_02 PM.png') center/cover no-repeat;
-    }
-}
+
 
 /* Clean, solid dark overlay for text readability - avoiding gradients */
 .hero-overlay {

@@ -2490,7 +2490,7 @@ button {
 .cs-hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(17, 17, 17, 0.20);
+    background: rgba(17, 17, 17, 0.55);
     z-index: 1;
 }
 

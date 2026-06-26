@@ -44,6 +44,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 a {
@@ -87,6 +88,7 @@ button {
     align-items: center;
     z-index: 1000;
     transition: var(--transition-smooth);
+    padding-top: env(safe-area-inset-top, 0px);
 }
 
 /* Header transition state on scroll */
@@ -189,6 +191,8 @@ button {
     opacity: 0;
     visibility: hidden;
     transition: var(--transition-smooth);
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 .mobile-menu-overlay.active {
@@ -1681,7 +1685,7 @@ button {
 .site-footer {
     position: relative;
     background-color: #0B0B0B;
-    padding: 160px 4% 100px;
+    padding: 160px 4% calc(100px + env(safe-area-inset-bottom, 0px));
     overflow: hidden;
     text-align: center;
 }

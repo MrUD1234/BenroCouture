@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const isSlowConnection = navigator.connection && (navigator.connection.effectiveType === 'slow-2g' || navigator.connection.effectiveType === '2g');
+
+    if (isSlowConnection) {
+        document.querySelectorAll('video').forEach(v => {
+            v.querySelectorAll('source').forEach(s => s.remove());
+            v.load();
+        });
+    }
+
     const header = document.getElementById('site-header');
     const mobileToggle = document.getElementById('mobile-toggle');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');

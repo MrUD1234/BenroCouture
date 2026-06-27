@@ -423,6 +423,7 @@ button {
 .about-image-wrapper {
     width: 100%;
     overflow: hidden;
+    aspect-ratio: 3 / 4;
 }
 
 .about-image {
@@ -3951,6 +3952,7 @@ button {
 .ac-mentor-image-wrapper {
     width: 100%;
     overflow: hidden;
+    aspect-ratio: 3 / 4;
 }
 
 .ac-mentor-image {

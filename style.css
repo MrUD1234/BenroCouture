@@ -2275,9 +2275,6 @@ button {
     overflow: hidden;
 }
 
-.lb-video-wrapper--rounded {
-    border-radius: 12px;
-}
 
 .lb-video {
     width: 100%;
@@ -2309,19 +2306,6 @@ button {
     letter-spacing: -0.2px;
 }
 
-/* Motion Statement (Chapter Three) */
-.lb-motion-statement {
-    text-align: center;
-}
-
-.lb-motion-text {
-    font-family: var(--font-headings);
-    font-size: clamp(32px, 5vw, 70px);
-    font-weight: 300;
-    line-height: 1.1;
-    color: var(--lb-dark);
-    letter-spacing: -0.5px;
-}
 
 /* --- Scroll Reveal --- */
 [data-reveal] {
@@ -2460,10 +2444,6 @@ button {
 
     .lb-statement-text {
         font-size: 22px;
-    }
-
-    .lb-motion-text {
-        font-size: 28px;
     }
 
     .lb-cta-heading {
@@ -2750,14 +2730,6 @@ button {
     box-shadow: 0 0 0 3px rgba(185, 150, 62, 0.1);
 }
 
-.cs-form-select {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23111111' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    padding-right: 44px;
-    cursor: pointer;
-}
 
 .cs-form-textarea {
     resize: vertical;
@@ -3480,7 +3452,7 @@ button {
         gap: 24px;
     }
 
-    .cs-form-btn {
+    #cs-submit-btn {
         width: 100%;
     }
 
